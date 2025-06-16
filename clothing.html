@@ -1,126 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Streetwear Brand – Visions Studio Builds</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vision Wear</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
-      color: #111;
+      padding: 0;
+      box-sizing: border-box;
     }
-    header {
+
+    body {
+      font-family: 'Arial', sans-serif;
       background-color: #000;
       color: #fff;
-      padding: 1rem 2rem;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid #333;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    header h1 {
-      margin: 0;
-      font-weight: 800;
-      letter-spacing: 1px;
-    }
+
     nav a {
-      color: #fff;
-      text-decoration: none;
       margin-left: 1rem;
-      font-weight: 600;
-      text-transform: uppercase;
+      text-decoration: none;
+      color: #ccc;
+      transition: 0.3s;
     }
-    .hero {
-      background-color: #111;
+
+    nav a:hover {
       color: #fff;
-      text-align: center;
-      padding: 4rem 2rem;
     }
-    .hero h2 {
+
+    .hero {
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
+      animation: fadeInUp 1s ease forwards;
     }
+
     .hero p {
+      color: #aaa;
       max-width: 600px;
       margin: 0 auto 2rem;
-      color: #ccc;
+      animation: fadeIn 2s ease forwards;
     }
-    .catalog {
+
+    .hero button {
+      padding: 0.8rem 2rem;
+      border: 1px solid #fff;
+      background: transparent;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: white;
+      color: black;
+    }
+
+    .collections {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
+      gap: 1.5rem;
+      padding: 4rem 2rem;
+    }
+
+    .collection-card {
+      background: #111;
       padding: 2rem;
+      border-radius: 15px;
+      transition: transform 0.3s;
     }
-    .item {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      background: #fff;
-      background-color: #111;
+
+    .collection-card:hover {
+      transform: scale(1.03);
     }
-    .item img {
-      width: 100%;
-      display: block;
-    }
-    .item h3 {
-      margin: 0;
-      padding: 1rem;
-      font-size: 1.2rem;
+
+    .about, .contact {
       text-align: center;
-      color: white;
+      padding: 4rem 2rem;
+      max-width: 700px;
+      margin: 0 auto;
     }
+
     footer {
-      background-color: #000;
-      color: #fff;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+      color: #666;
     }
-    footer small {
-      display: block;
-      margin-top: 1rem;
-      opacity: 0.6;
+
+    @keyframes fadeInUp {
+      0% {opacity: 0; transform: translateY(40px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Visions Studio Builds</h1>
+    <h1>VISION WEAR</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="#">Catalog</a>
-      <a href="#">Contact</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Vision Studio Worldwide</h2>
-    <p>Bold. Unique. Designed for the culture. Check out our premium drops and represent the streetwear lifestyle.</p>
+    <h1>Built For The Bold</h1>
+    <p>Clean aesthetics. Timeless feel. Discover the next generation of fashion built for your future.</p>
+    <button>Explore Collection</button>
   </section>
 
-  <section class="catalog">
-    <div class="item">
-     <img src="images/shirt1.png" alt="Example">
-      <h3>Example</h3>
+  <section id="collections" class="collections">
+    <div class="collection-card">
+      <h3>Visionary</h3>
+      <p>Premium drops inspired by streetwear and future culture.</p>
     </div>
-    <div class="item">
-      <img src="images/shirt1.png" alt="Burgundy Vision Racks Shirt">
-      <h3>Example</h3>
+    <div class="collection-card">
+      <h3>Urban Line</h3>
+      <p>Slick and sharp styles for daily hustle and grind.</p>
     </div>
-    <div class="item">
-      <img src="images/shirt1.png" alt="Navy Vision Racks Shirt">
-      <h3>Example</h3>
+    <div class="collection-card">
+      <h3>Essentials</h3>
+      <p>Minimal, everyday basics crafted with purpose and quality.</p>
     </div>
-    <div class="item">
-      <img src="images/shirt1.png" alt="White Vision Racks Shirt">
-      <h3>Example</h3>
-    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Our Mission</h2>
+    <p>Vision Wear was built on the belief that clothing should speak. Not just style, but identity. Each drop reflects a mindset, a movement, and a future.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Get In Touch</h2>
+    <p>Want a brand site like this for your clothing line? Let’s build together.</p>
+    <button>Contact Us</button>
   </section>
 
   <footer>
-    <p>Want a bold site like this for your brand? Visions Studio Builds has you covered.</p>
-    <small>&copy; 2025 Visions Studio Builds. Website by destroyedvision.</small>
+    &copy; <span id="year"></span> Vision Studio Builds. All rights reserved.
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>

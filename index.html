@@ -3,105 +3,155 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Design Portfolio – Visions Studio Builds</title>
+  <title>Visions Studio Builds – Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
+      background-color: #fff;
       color: #111;
     }
-    header {
-      background-color: #111;
+    .top-banner {
+      background-color: #000;
       color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      text-align: center;
+      font-size: 0.8rem;
+      padding: 0.5rem;
+      font-weight: bold;
     }
-    header h1 {
-      margin: 0;
-      font-weight: 800;
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    header img {
+      max-width: 100px;
+    }
+    nav {
+      margin-top: 1rem;
     }
     nav a {
-      color: #fff;
+      margin: 0 1rem;
       text-decoration: none;
-      margin-left: 1rem;
+      color: #111;
       font-weight: 600;
+      font-size: 0.9rem;
     }
-    .hero {
-      background-color: #f3f3f3;
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 800;
       text-align: center;
-      padding: 4rem 2rem;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto 2rem;
+      margin-top: 2rem;
     }
     .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 2rem;
       padding: 2rem;
     }
     .project {
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      overflow: hidden;
-      background: #fff;
+      text-align: center;
+      max-width: 250px;
     }
     .project img {
       width: 100%;
-      display: block;
+      border-radius: 8px;
     }
-    .project h3 {
-      margin: 0;
-      padding: 1rem;
-      font-size: 1.2rem;
+    .project p {
+      margin: 0.5rem 0 0;
+      font-weight: 600;
+    }
+    .about {
+      text-align: center;
+      max-width: 700px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
+    .about h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .about p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .contact {
+      text-align: center;
+      max-width: 700px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
+    .contact h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .contact p {
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
     footer {
-      background-color: #111;
-      color: #fff;
       text-align: center;
       padding: 2rem 1rem;
+      background-color: #f8f8f8;
     }
-    footer small {
-      display: block;
-      margin-top: 1rem;
-      opacity: 0.6;
+    .collection-card:hover {
+      transform: scale(1.03);
+    }
+     .collection-card {
+      background: #111;
+      padding: 2;
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+    img{
+      size: 500px;
     }
   </style>
 </head>
 <body>
+  <div class="top-banner">
+    VISIONS STUDIO BUILDS | HIGH QUALITY WEBSITE DESIGN & CREATIVE DEVELOPMENT
+  </div>
+
   <header>
-    <h1>Visions Studio Builds</h1>
+    <img src="images/vecteezy_letter-v-vv-minimalist-art-monogram-arrow-shape-logo-white_4256683.jpg" alt="Visions Studio Logo">
     <nav>
-      <a href="#">Home</a>
-      <a href="clothing.html">Portfolio</a>
-      <a href="#">Contact</a>
+      <a href="index.html">HOME</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+      <a href="#about">ABOUT</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Professional Website Design</h2>
-    <p>Custom-built websites for brands that want to stand out. Modern, mobile-ready, and made to convert.</p>
-  </section>
+  <div id="projects" class="section-title">EXAMPLES OF OUR WORK</div>
 
   <section class="projects">
     <div class="project">
-      <img src="images/clothing.png" alt="Streetwear Brand Site">
-      <h3>Streetwear Brand</h3>
+      <a href="clothing.html" target="_blank"> <img class="collection-card" src="images/clothingwebsite.png" alt="Website Example 1"></a>
+      <p>Streetwear Brand Website</p>
     </div>
   </section>
 
+  <section id= "about" class="about">
+    <h2>The Vision Behind Visions Studio Builds</h2>
+    <p><strong>Visions Studio Builds</strong> is dedicated to creating immersive, innovative, and polished websites. Our team delivers top-tier scripting, UI, environment design, and branding to help your website stand out.</p>
+    <p>Whether you're launching your first website or expanding your websites reach, we provide the tools and creativity to bring your ideas to life.</p>
+    <p>Let’s build your vision—together.</p>
+  </section>
+
+  <section id= "contact" class="contact">
+    <h2>Time to create your vision</h2>
+    <p><strong>Instagram: visionstudiobuilds</strong> </p>
+    <p><strong>Discord Inquiries: destroyedvision</strong></p>
+    <p><strong>Reach out for your next project.</strong></p>
+  </section>
+
   <footer>
-    <p>Need a website for your brand or business? Let's build it together.</p>
-    <small>&copy; 2025 Visions Studio Builds. Web design & strategy by destroyedvision.</small>
+    <p>&copy; 2025 Visions Studio Builds. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
