@@ -1,19 +1,29 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Defines the document as HTML5 -->
 <html lang="en">
 <head>
+  <!-- Basic metadata for responsive design and character encoding -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visions Studio Builds – Portfolio</title>
+
+  <!-- Favicon for browser tab -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts for better typography -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Internal CSS styling -->
   <style>
+    /* General page styling */
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background-color: #fff;
       color: #111;
     }
+
+    /* Top black banner at the top of the site */
     .top-banner {
       background-color: #000;
       color: #fff;
@@ -22,6 +32,8 @@
       padding: 0.5rem;
       font-weight: bold;
     }
+
+    /* Header and logo section */
     header {
       display: flex;
       flex-direction: column;
@@ -29,12 +41,16 @@
       justify-content: center;
       padding: 2rem 1rem;
     }
+
     header img {
       max-width: 100px;
     }
+
+    /* Navigation styling */
     nav {
       margin-top: 1rem;
     }
+
     nav a {
       margin: 0 1rem;
       text-decoration: none;
@@ -42,12 +58,16 @@
       font-weight: 600;
       font-size: 0.9rem;
     }
+
+    /* Section title for project examples */
     .section-title {
       font-size: 1.4rem;
       font-weight: 800;
       text-align: center;
       margin-top: 2rem;
     }
+
+    /* Container for project thumbnails */
     .projects {
       display: flex;
       flex-wrap: wrap;
@@ -55,70 +75,91 @@
       gap: 2rem;
       padding: 2rem;
     }
+
+    /* Individual project card */
     .project {
       text-align: center;
       max-width: 250px;
     }
+
     .project img {
       width: 100%;
       border-radius: 8px;
     }
+
     .project p {
       margin: 0.5rem 0 0;
       font-weight: 600;
     }
+
+    /* About section styling */
     .about {
       text-align: center;
       max-width: 700px;
       margin: 4rem auto;
       padding: 0 1rem;
     }
+
     .about h2 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
     }
+
     .about p {
       font-size: 0.95rem;
       line-height: 1.6;
     }
+
+    /* Contact section styling */
     .contact {
       text-align: center;
       max-width: 700px;
       margin: 4rem auto;
       padding: 0 1rem;
     }
+
     .contact h2 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
     }
+
     .contact p {
       font-size: 0.95rem;
       line-height: 1.6;
     }
+
+    /* Footer styling */
     footer {
       text-align: center;
       padding: 2rem 1rem;
       background-color: #f8f8f8;
     }
+
+    /* Collection card hover effect */
     .collection-card:hover {
       transform: scale(1.03);
     }
-     .collection-card {
+
+    .collection-card {
       background: #111;
-      padding: 2;
+      padding: 2; /* NOTE: Probably meant to be '2rem' */
       border-radius: 15px;
       transition: transform 0.3s;
     }
-    img{
-      size: 500px;
+
+    img {
+      size: 500px; /* NOTE: This is not a valid CSS property – should be width/height */
     }
   </style>
 </head>
 <body>
+
+  <!-- Black promotional banner -->
   <div class="top-banner">
     VISIONS STUDIO BUILDS | HIGH QUALITY WEBSITE DESIGN & CREATIVE DEVELOPMENT
   </div>
 
+  <!-- Logo and navigation -->
   <header>
     <img src="images/vecteezy_letter-v-vv-minimalist-art-monogram-arrow-shape-logo-white_4256683.jpg" alt="Visions Studio Logo">
     <nav>
@@ -129,31 +170,39 @@
     </nav>
   </header>
 
+  <!-- Section title for portfolio -->
   <div id="projects" class="section-title">EXAMPLES OF OUR WORK</div>
 
+  <!-- Project thumbnails -->
   <section class="projects">
     <div class="project">
-      <a href="clothing.html" target="_blank"> <img class="collection-card" src="images/clothingwebsite.png" alt="Website Example 1"></a>
+      <a href="clothing.html" target="_blank">
+        <img class="collection-card" src="images/clothingwebsite.png" alt="Website Example 1">
+      </a>
       <p>Streetwear Brand Website</p>
     </div>
   </section>
 
-  <section id= "about" class="about">
+  <!-- About the brand -->
+  <section id="about" class="about">
     <h2>The Vision Behind Visions Studio Builds</h2>
     <p><strong>Visions Studio Builds</strong> is dedicated to creating immersive, innovative, and polished websites. Our team delivers top-tier scripting, UI, environment design, and branding to help your website stand out.</p>
-    <p>Whether you're launching your first website or expanding your websites reach, we provide the tools and creativity to bring your ideas to life.</p>
+    <p>Whether you're launching your first website or expanding your website's reach, we provide the tools and creativity to bring your ideas to life.</p>
     <p>Let’s build your vision—together.</p>
   </section>
 
-  <section id= "contact" class="contact">
+  <!-- Contact information -->
+  <section id="contact" class="contact">
     <h2>Time to create your vision</h2>
-    <p><strong>Instagram: visionstudiobuilds</strong> </p>
+    <p><strong>Instagram: visionstudiobuilds</strong></p>
     <p><strong>Discord Inquiries: destroyedvision</strong></p>
     <p><strong>Reach out for your next project.</strong></p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Visions Studio Builds. All Rights Reserved.</p>
   </footer>
+
 </body>
 </html>
